@@ -1,0 +1,17 @@
+.sponsors {
+  margin-left: -83rem;
+  overflow: hidden;
+  margin-top: -7rem;
+}
+
+.s-image {
+  transform: scale(0.32);
+  margin-left: -10rem;
+}
+
+@media (max-width: 767px) {
+  .s-image {
+    transform: scale(0.2);
+    margin-left: -30rem;
+  }
+}

@@ -1,0 +1,147 @@
+.nav {
+  display: flex;
+  height: 10vh;
+  position: relative;
+  width: 100%;
+  height: 48px;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.n-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+  flex: 1;
+  cursor: pointer;
+}
+
+.n-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 3;
+  margin: 0 5rem 0 2rem;
+}
+
+.n-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  gap: 3rem;
+}
+
+.n-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 25px;
+  font-family: "Red Rose", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #434343;
+  cursor: pointer;
+}
+
+.n-item:hover {
+  color: #a02279;
+}
+
+.n-btn {
+  margin-left: -15rem;
+}
+
+.toggle-btn {
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.bar {
+  height: 6px;
+  width: 25px;
+  background-color: #a02279;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+#hidden {
+  display: flex;
+}
+
+@media (max-width: 1000px) {
+  .nav {
+    align-items: flex-start;
+  }
+
+  .n-right {
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #hidden {
+    position: absolute;
+    right: 0rem;
+    top: 4rem;
+    flex-direction: column;
+    background: #a02279;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 25rem;
+    z-index: 999;
+    gap: 1rem;
+  }
+  .n-item {
+    /* display: none; */
+    width: 100%;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    height: 35px;
+    margin-left: -2rem;
+    padding: 0;
+  }
+  .n-item:hover {
+    color: #fff;
+  }
+
+  .toggle-btn {
+    display: flex;
+  }
+  .ns-btn {
+    display: none;
+  }
+  .n-btn {
+    position: absolute;
+    right: 4rem;
+    width: 130px;
+    top: -5;
+    height: 40px;
+    margin-bottom: 0;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1050px) {
+  .n-item {
+    height: 20px;
+    font-size: 18px;
+  }
+  .n-items {
+    gap: 2rem;
+  }
+}

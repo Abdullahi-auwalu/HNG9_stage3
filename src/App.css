@@ -1,0 +1,39 @@
+.App {
+  overflow: hidden;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 7rem 2rem 0 0;
+  position: relative;
+  gap: 15px;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 292px;
+  height: 372px;
+  left: 0;
+  top: 0px;
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  border: 1px solid #d7d7d7;
+  border-radius: 15px;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Red Rose", sans-serif;
+}
+
+.btn:hover {
+  background: #843fe8;
+}

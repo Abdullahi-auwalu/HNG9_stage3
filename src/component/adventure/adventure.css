@@ -1,0 +1,77 @@
+.adventure {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 100%;
+  margin-left: 4rem;
+}
+.ad-heading {
+  position: absolute;
+  margin-top: -3rem;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  left: -4rem;
+  justify-content: center;
+}
+
+.ad-heading > h2 {
+  position: absolute;
+  left: 5rem;
+  right: 3rem;
+  top: 36.3%;
+  bottom: 46.12%;
+  font-family: "Red Rose", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  background-clip: text;
+}
+
+.card > img {
+  margin-left: 14px;
+  margin-top: 14px;
+}
+
+.first-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 14px 0 14px;
+  font-family: "Red Rose", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 13px;
+  color: #434343;
+}
+
+.stars {
+  display: flex;
+}
+
+.stars > img {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .adventure {
+    height: 570vh;
+  }
+
+  .ad-heading > h2 {
+  }
+
+  .cards {
+    display: flex;
+    top: 3rem;
+    bottom: 5rem;
+  }
+
+  .cards > * {
+    position: static;
+  }
+}
